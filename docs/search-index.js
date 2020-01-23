@@ -1,0 +1,5 @@
+var N=null,E="",T="t",U="u",searchIndex={};
+var R=["result","formatter"];
+
+searchIndex["geom_2d"]={"doc":E,"i":[[0,"point","geom_2d",E,N,N],[3,"Point","geom_2d::point","A 2D Point",N,N],[11,"new",E,E,0,[[["i32"]],["point"]]],[11,"x",E,E,0,[[["self"]],["i32"]]],[11,"y",E,E,0,[[["self"]],["i32"]]],[11,"into",E,E,0,[[],[U]]],[11,"from",E,E,0,[[[T]],[T]]],[11,"to_owned",E,E,0,[[["self"]],[T]]],[11,"clone_into",E,E,0,[[["self"],[T]]]],[11,"to_string",E,E,0,[[["self"]],["string"]]],[11,"try_from",E,E,0,[[[U]],[R[0]]]],[11,"try_into",E,E,0,[[],[R[0]]]],[11,"borrow",E,E,0,[[["self"]],[T]]],[11,"borrow_mut",E,E,0,[[["self"]],[T]]],[11,"type_id",E,E,0,[[["self"]],["typeid"]]],[11,"clone",E,E,0,[[["self"]],["self"]]],[11,"eq",E,E,0,[[["self"]],["bool"]]],[11,"fmt",E,E,0,[[[R[1]],["self"]],[R[0]]]],[11,"fmt",E,E,0,[[[R[1]],["self"]],[R[0]]]],[11,"sub",E,E,0,[[],["self"]]],[11,"add",E,E,0,[[],["self"]]],[11,"mul",E,E,0,[[["i32"]],["self"]]]],"p":[[3,"Point"]]};
+addSearchOptions(searchIndex);initSearch(searchIndex);
