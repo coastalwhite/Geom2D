@@ -4,7 +4,9 @@ version = "0.1.0"
 authors = ["Gijs Burghoorn <g.burghoorn@gmail.com>"]
 edition = "2018"
 description = "A Rust Library for basic 2D Geometric Definitions"
-repository = "https://github.com/coastalwhite/Geom2D"
 docs = "https://coastalwhite.github.io/Geom2D/geom_2d/"
+repository = "https://github.com/coastalwhite/Geom2D.git"
+homepage = "https://github.com/coastalwhite/Geom2D"
+license-file = "LICENSE.md"
 
 [dependencies]
