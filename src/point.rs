@@ -1,7 +1,7 @@
 use std::ops;
 
 /// A 2D Point
-#[derive(Debug)]
+#[derive(Debug, Hash)]
 pub struct Point(i32, i32);
 
 impl std::fmt::Display for Point {
