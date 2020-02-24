@@ -59,7 +59,13 @@ impl ops::Mul<Point> for i32 {
     }
 }
 
-impl Copy for Point { }
+impl Into<(i32, i32)> for Point {
+    fn into(self) -> (i32, i32) {
+        (self.0, self.1)
+    }
+}
+
+impl Copy for Point {}
 
 impl Clone for Point {
     fn clone(&self) -> Self {
@@ -74,17 +80,17 @@ mod tests {
     #[test]
     fn point_test_add() {
         let point1 = Point::new(2, 2);
-        let point2 = Point::new(3,1);
+        let point2 = Point::new(3, 1);
 
-        assert_eq!(point1 + point2, Point::new(5,3));
+        assert_eq!(point1 + point2, Point::new(5, 3));
     }
 
     #[test]
     fn point_test_sub() {
         let point1 = Point::new(2, 2);
-        let point2 = Point::new(3,1);
+        let point2 = Point::new(3, 1);
 
-        assert_eq!(point1 - point2, Point::new(-1,1));
+        assert_eq!(point1 - point2, Point::new(-1, 1));
     }
 
     #[test]
@@ -92,6 +98,6 @@ mod tests {
         let point1 = Point::new(2, 2);
         let scalar = 5;
 
-        assert_eq!(scalar*point1, Point::new(10,10));
+        assert_eq!(scalar * point1, Point::new(10, 10));
     }
 }
